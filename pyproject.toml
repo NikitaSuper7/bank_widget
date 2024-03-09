@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "bank-widget"
+version = "0.1.0"
+description = ""
+authors = ["Nike_S7 <nike7cr77@ya.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^8.0.2"
+pytest-cov = "^4.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
