@@ -1,7 +1,11 @@
 from src.function import BankWidget
 import datetime
 from config import operations_path
+
 test_1 = BankWidget(operations_path)
+test_1.read_file()
+test_1.find_smallest()
+test_1.selection_sort()
 def test_read():
     assert test_1.read_file()[0] == {
                     "id": 441945886,
@@ -18,12 +22,9 @@ def test_read():
                     "from": "Maestro 1596837868705199",
                     "to": "Счет 64686473678894779589"
                   }
-    assert test_1.find_smallest()
 
 def test_last_five():
-    test_1.read_file()
-    test_1.find_smallest()
-    test_1.selection_sort()
+
     assert test_1.last_operetions() == ('8.12.2019 - Открытие вклада\n'
  'кому - Счет ****************5907\n'
  '\n'
